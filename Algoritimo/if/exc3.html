@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exc notas</title>
+</head>
+<body>
+    <p>pergunte o valor de 3 notas</p>
+
+    NOTA 1:  <Input id="input_nota1"<br>
+    NOTA 2: <Input id="input_nota2"<br>
+    NOTA 3: <Input id="input_nota3"<br>
+        <button onclick="Analise()">Analisar desempenho</button>
+        
+    <div id="calculos_de_notas"></div>
+</body>
+</body>
+</body>
+</html>
+<script>
+    function Analise(){
+       var nota1= Number (input_nota1.value) 
+       var nota2= Number (input_nota2.value) 
+       var nota3= Number (input_nota3.value) 
+       var total= (nota1+nota2+nota3)/3
+
+    calculos_de_notas.innerHTML=`Sua média foi de ${total}`
+    if(total >9.4)
+    calculos_de_notas.innerHTML= `Parabéns, você é fora de série!`
+
+    }
+    
+    
+    
+    
+    </script>

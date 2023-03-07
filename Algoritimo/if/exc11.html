@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exc qtd filhos</title>
+
+</head>
+<body>
+    <p>Quantidade de filhos que possui</p>
+    <input id="input_qtdfilho">
+    <button onclick="calcular()">Analisar familia</button>
+    <div id="filhos"></div>
+</body>
+</html>
+<script>
+    function calcular(){
+        var qtd_filhos = Number(input_qtdfilho.value)
+        filhos.innerHTML = ''
+        
+        if(qtd_filhos == 1){
+          filhos.innerHTML = "Não tem tv"
+        }
+        if(qtd_filhos == 2){
+          filhos.innerHTML = `Não tem tv
+          <br>
+         Não tem Internet `
+        }
+        if(qtd_filhos == 3){
+          filhos.innerHTML = `Não tem tv
+          <br>
+          Não tem Internet
+          <br>
+          Não tem videogame`
+        }
+        if(qtd_filhos >=4){
+          filhos.innerHTML = `Não tem tv
+          <br>
+          Não tem internet 
+          <br>
+          Não tem viogame
+          <br>
+         Não tem netflix`
+        }
+    }
+    </script>

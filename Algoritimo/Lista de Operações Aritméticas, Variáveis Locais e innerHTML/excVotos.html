@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Votos</title>
+</head>
+<body>
+    <p>Quantidade Votos A</p>
+    <input id="input_candidatoA"><br>
+    <p>Quantidade Votos B</p>
+    <input id="input_candidatoB"><br>
+    <p>Brancos</p>
+    <input id="input_Brancos"><br>
+    <p>Nulos</p>
+    <input id="input_Nulos"><br>
+
+  <button onclick="votos()">Quantidade votos</button>
+  <div id="res"></div>
+</body>
+</html>
+
+<script>
+    function votos(){
+    
+       var candidatosA= Number (input_candidatoA.value)
+       var candidatosB= Number (input_candidatoB.value)
+       var Brancos =Number (input_Brancos.value) 
+       var Nulos = Number (input_Nulos.value)
+       var total = candidatosA+candidatosB+Brancos+Nulos
+       var totalA = (alcandidatosA / tot)*100
+       var totalB = (candidatosB / total)*100
+       var totalInvalidos = (Nulos+Brancos / total)*100
+
+       res.innerHTML= `${total}
+    ${totalA}: % (${candidatosA} votos)
+    ${totalB}: % (${candidatosB}votos)
+    ${totalInvalidos}: % (${Nulos+Brancos} votos)`
+    }
+   
+</script>

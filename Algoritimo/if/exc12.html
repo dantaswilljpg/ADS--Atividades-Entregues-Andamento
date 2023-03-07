@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exc elevador media</title>
+</head>
+<body>
+    <p>solicitar<input id="input_elevador">
+        <button onclick="ligar()">ligar eleva peso total elevador</button>
+        <div id="elevador"></div>
+</body>
+</html>
+
+<script>
+    function ligar(){
+        var peso = Number (input_elevador.value)
+        if(peso<500)
+        elevador.innerHTML=`elevador vai se mover`
+        if(peso>=500)
+        elevador.innerHTML=`alguem precisa descer do elevador`
+
+
+    }
+</script>

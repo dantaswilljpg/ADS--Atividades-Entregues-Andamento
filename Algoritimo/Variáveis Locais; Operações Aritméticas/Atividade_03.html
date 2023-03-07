@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Valor da Passagem <input id="input_valor_passagem">
+    Quantidade de Viagens feitas por mês <input id="input_qtd_viagens">
+    <button onclick="calcular()">
+        Calcular Desconto
+    </button>
+</body>
+</html>
+<script>
+    function calcular(){
+        var valor_passagem = Number(input_valor_passagem.value)
+        var desconto = valor_passagem * 0.5
+        var qtd_viagens = Number(input_qtd_viagens.value)
+        var total = desconto * qtd_viagens
+
+        alert('Voce economizará R$' + total + ' no mês'  )
+
+    }
+</script>

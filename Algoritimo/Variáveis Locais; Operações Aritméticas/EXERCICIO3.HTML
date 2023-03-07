@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+    VALOR Passagem: <input type="TEXT" id="input_valor"><br>
+    Quantidade Viagens: <input type="TEXT" id="input_quantidade">
+
+    <button onclick="economia()">ver economia</button>
+</body>
+</html>
+<script>
+
+    function  economia(){
+        var valor = Number (input_valor.value)
+        var quantidade= Number (input_quantidade.value)
+        var desconto = (valor *0.5)
+        var total = (desconto * quantidade)
+     
+       alert("Você economizará R$X por mês:" + total)
+    }
+    
+  
+    
+    </script>

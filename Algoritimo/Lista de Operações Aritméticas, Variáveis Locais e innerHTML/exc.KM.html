@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quantidade KM</title>
+</head>
+<body>
+    <p> o valor da passagem de ônibus;</p>
+    <input id="input_valor"><br>
+    <p> a quantidade de viagens que o usuário faz por mês;;</p>
+    <input id="input_qtdviagens"><br>
+    <p> a distância do trabalho dele até sua casa (em km);</p>
+    <input id="input_distancia"><br>
+    <button onclick="Calcular()">Calcular VT</button>
+    <div id="res"></div>
+</body>
+</html>
+<script>
+    function Calcular(){
+        var valor= Number (input_valor.value) 
+        var Viagens= Number (input_qtdviagens.value)
+        var Distancia = Number (input_distancia.value)
+        var carro= Distancia*0.75
+        var valor_carro= carro + Distancia
+        var viagensOnibus= Viagens*0.9
+        var onibus= valor* viagensOnibus
+        var total= carro+onibus
+    
+      res.innerHTML=`   Você vai gastar R$ ${total} por mês com transporte.`
+          }
+</script>

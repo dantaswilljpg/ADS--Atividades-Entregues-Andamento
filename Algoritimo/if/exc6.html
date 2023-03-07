@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exc Banco</title>
+</head>
+<body>
+    <p>Solicite valor da renda</p>
+    <input id="input_renda"<br>
+    <p>valor da prestação</p>
+    <input id="input_prestacao">
+    <button onclick="Financiamento()">Verificar financiamento</button>
+<div id="funcionamento">
+
+</body>
+</html>
+
+<script>
+    function Financiamento(){
+        var prestação = Number (input_prestacao.value)
+        var renda= Number (input_renda.value)
+        var calculo= (prestação/renda)*100 
+        
+        funcionamento.innerHTML = `a prestação corresponde a ${calculo}% da renda familiar`
+        if(calculo > 30){
+            funcionamento.innerHTML =  `<span style="color: red;"><b><i>a prestação corresponde a ${calculo} % da renda familiar </i></b></span>`
+        }
+    }
+</script>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exc conta de luz</title>
+    <p>Solicite  a quantidade de kWh</p>
+    <input id="input_qtd_kWh">
+    <button onclick="calculo_Luz()">calcular conta de luz</button>
+     <div id="luz">
+</head>
+<body>
+</body>
+</html>
+
+<script>
+    function calculo_Luz(){
+        var kWh= 0.85
+       var qtdmes= Number (input_qtd_kWh.value)
+       var total = qtdmes*0.75
+       var quantiadesconto= total- (total*0.10)
+
+       luz.innerHTML= ` O valor da conta a ser paga é de R$  ${total}`
+       if(total <100)
+       luz.innerHTML =`O valor da conta a ser paga é de R$  ${quantiadesconto}`
+          
+    }
+
+</script>
+
+

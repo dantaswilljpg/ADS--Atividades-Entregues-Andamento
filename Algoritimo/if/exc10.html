@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exc saldo conta</title>
+</head>
+<body>
+    <p>Pergunte ao usuario o valor do seu saldo da conta do banco</p>
+    <input id="input_saldo">
+    <button onclick="verificar()">verificar financas</button>
+    <div id="verificacao"></div>
+</body>
+</html>
+
+<script>
+    function verificar(){
+        var saldo =Number (input_saldo.value)
+        if(saldo == 0){
+        verificacao.innerHTML= `<span style="color: black;">Conta zerada !!!!!!!!!</span>`
+        }
+        if(saldo <0){
+        verificacao.innerHTML=` <span style="color: red;">Está devendo !!!!!!!!!</span>`
+        }
+        if(saldo >0){
+        verificacao.innerHTML=` <span style="color: blue;">Saldo positivo! sorriso</span>`
+        }
+
+   } 
+</script>

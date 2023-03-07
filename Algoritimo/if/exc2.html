@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exc Refrigerante</title>
+</head>
+<body>
+    <p>Quantidade Refrigerantes</p>
+    <input id="input_refris">
+<button onclick="Refrigerante()">Quantos refrigerantes consome</button>
+<div id="refrigerante"></div>
+</body>
+</html>
+<script>
+    function Refrigerante(){
+        var qtd_refrigerante= Number (input_refris.value);
+        var total = qtd_refrigerante*365
+
+        refrigerante.innerHTML= `quantidade de latinhas ${total} que ele consome por ano `
+         if(qtd_refrigerante>=500)
+         refrigerante.innerHTML = `Cuidado com a diabetes!`
+    }
+</script>

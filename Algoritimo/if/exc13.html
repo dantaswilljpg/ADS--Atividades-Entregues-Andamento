@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<p>pergunte o valor de 2 notas</p>
+
+NOTA 1:  <input id="input_nota1"<br>
+NOTA 2: <input id="input_nota2"<br>
+
+    <button onclick="Verificacao_nota()">Verificar situação</button>
+    
+<div id="calculosnotas"></div>
+</body>
+</html>
+<script>
+function Verificacao_nota(){
+   var nota1= Number (input_nota1.value) 
+   var nota2= Number (input_nota2.value) 
+   var total= (nota1+nota2)/2
+
+if (total>=6)
+calculosnotas.innerHTML = `Parabéns,aprovado`
+if(total<6)
+calculosnotas.innerHTML =`tente outra vez..............`
+
+}
+
+
+
+</script>

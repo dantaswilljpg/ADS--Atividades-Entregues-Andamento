@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exc conteudo streaming</title>
+</head>
+<body>
+    <p>Peça ao usuario para informar a ultima serie (sitcom) que ele assistiu</p>
+    <input id="input_serie"<br>
+    <p>Informar total de episodios que ele já assistiu </p>
+    <input id="input_total">
+    <button onclick="Verificar()">Verificar o nivel</button>
+    <div id="verificacaoserie">
+</body>
+</html>
+
+<script>
+    function Verificar(){
+        var serie=  (input_serie.value)
+        var eps = Number (input_total.value)
+        var total = eps* 22
+        
+     verificacaoserie.innerHTML=`Vejo que você gosta da serie ${serie}`
+      if(total>1800)
+      verificacaoserie.innerHTML= `Uau, você realmente gosta dessa série`    
+    }
+</script>

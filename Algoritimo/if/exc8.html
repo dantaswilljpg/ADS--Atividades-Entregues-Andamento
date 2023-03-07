@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peso Medio</title>
+</head>
+<body>
+    <p>Solicite a quantidade de homens no elevador</p>
+    <input id="input_elevador_masc"><br>
+    <p>Solicite a quantidade de mulher no elevador</p>
+    <input id="input_elevador_fem"><br>
+    <button onclick="Analise()">Analisando peso</button>
+    <div id="elevador"></div>
+</body>
+</html>
+
+<script>
+    function Analise(){
+      var qtdmasc= Number (input_elevador_masc.value) 
+      var qtdfem= Number (input_elevador_fem.value) 
+      var calculomasc = qtdmasc*80
+      var calculofem = qtdfem*50
+      var total= calculomasc+calculofem
+
+      elevador.innerHTML = `Este elevador suporta 800 Kg e o peso estimado desta lotação é de ${total}`
+      if(total>800)
+      elevador.innerHTML =` <span style="color: blue;">Será necessário descer alguém para que o elevador se movimente</span>`
+
+    }
+
+    
+</script>

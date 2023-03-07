@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabuada</title>
+</head>
+<body>
+    <P>TABUADAS</P>
+    <input id="input_tabuada"><br>
+    <button onclick="Tabuada()">Ver Tabuada completa</button>
+    <div id="res"></div>
+</body>
+</html>
+<script>
+    function Tabuada(){
+       
+        var tabuada= Number (input_tabuada.value)
+        var tabuada1 = (tabuada*1)
+        var tabuada2 = (tabuada*2)
+        var tabuada3 = (tabuada*3)
+        var tabuada4 = (tabuada*4)
+        var tabuada5 = (tabuada*5)
+        var tabuada6 = (tabuada*6)
+        var tabuada7 = (tabuada*7)
+        var tabuada8 = (tabuada*8)
+        var tabuada9 = (tabuada*9)
+
+        res.innerHTML=  `
+   ${tabuada}*1  = ${tabuada1}<br>
+   ${tabuada}*2 = ${tabuada2}<br>
+   ${tabuada}*3 = ${tabuada3}<br>
+   ${tabuada}*3 = ${tabuada3}<br>
+   ${tabuada}*4 = ${tabuada4}<br>
+   ${tabuada}*5 = ${tabuada5}<br>
+   ${tabuada}*6 = ${tabuada6}<br>
+   ${tabuada}*7 = ${tabuada7}<br>
+   ${tabuada}*8 = ${tabuada8}<br>
+   ${tabuada}*9 = ${tabuada9}<br>`
+
+
+}
+
+</script>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exc pizza</title>
+</head>
+<body>
+    <p>O sabor</p>
+    <input id="input_pizza"><br>
+    <p>O valor</p>
+    <input id="input_valor"><br>
+    <p>A quantidade de amigos</p>
+    <input id="input_qtdamigos"><br>
+<button onclick="Ver_Valor()">calcule e exiba na tela </button>
+<div id="res"></div>
+</body>
+</html>
+
+<script>
+    function Ver_Valor(){
+        var sabor=  (input_pizza.value)
+        var valor= Number (input_valor.value)
+        var qtdamigos= Number (input_qtdamigos.value)
+        var totalpizza= valor*0.1
+        var gorgeta = (totalpizza+valor)/qtdamigos
+
+        res.innerHTML =     `Cada ${qtdamigos} amigos vai colaborar com ${gorgeta} reais para a pizza de  ${sabor}. `
+    }
+</script>

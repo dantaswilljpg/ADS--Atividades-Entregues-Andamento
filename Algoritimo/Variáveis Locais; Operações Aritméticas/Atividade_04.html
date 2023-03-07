@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Nome do Guerreiro:</p>
+    <input id="input_nome_do_guerreiro">
+    <p>Qi Normal do Guerreiro</p>
+    <input id="input_qi_normal_guerreiro">
+    <button onclick="ver_ki()">
+        Ver qi em cada forma
+    </button>
+</body>
+</html>
+<script>
+    function ver_ki(){
+        var nome_guerreiro = input_nome_do_guerreiro.value
+        var qi_guerreiro = Number(input_qi_normal_guerreiro.value)
+        var sayajin = qi_guerreiro +  (qi_guerreiro * 0.5)
+        var super_sayain = qi_guerreiro + (qi_guerreiro * 1)
+
+        alert('Com o poder de sayajin o seu ki ficará' + sayajin + 'Com o poder de super sayain 2 voce ficará com ' + super_sayain)
+    }
+</script>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DESAFIO</title>
+</head>
+<body>
+    <P>  nome do passageiro;  </P>
+    <input id="input_Nome"><br>
+    <p>Campo da distancia</p>
+    <input id="input_distancia"><br>
+    <p>Bandeira da corrida</p>
+<input  id="input_Bandeira"><br>
+<p>horario corrida</p>
+<input  id="input_corrida">
+
+
+
+<button onclick="Calcular()">Calcular corrida</button>
+<div id="res"></div>
+    
+</body>
+</html>
+
+<script>
+    function Calcular(){
+  var nomepassageiro= Number(input_Nome.value)
+  var distancia = Number (input_distancia.value)
+  var numBandeira = Number (input_Bandeira.value)
+  var horcorrida = Number (input_corrida.value)
+  var Calcular= distancia*1.25
+  var bandeira_1_corrida1 = Calcular =(Calcular*0.05)
+  var bandeira_1_corridahorario2 = Calcular =(Calcular*0.10)
+  var bandeira_1_corrida3 = Calcular =(Calcular*0.15)
+  var bandeira_2_corrida1= Calcular = (Calcular*0.10)
+  var bandeira_2_corrida2= Calcular = (Calcular*0.20)
+  var bandeira_2_corrida3= Calcular = (Calcular*0.30)
+  var bandeira_3_corrida1= Calcular = (Calcular*0.15)
+  var bandeira_3_corrida2= Calcular = (Calcular*0.30)
+  var bandeira_3_corrida3= Calcular = (Calcular*0.45)
+    }
+
+    if (numBandeira==1){
+    if (numBandeira<=3){ 
+
+
+    if(horcorrida>=0){
+    if(horcorrida<=23){
+
+    if(numBandeira==1){
+    if(horcorrida>=0){
+    if(horcorrida<=6){
+  res.innerHTML= `"Olá ${nomepassageiro} Sua corrida, será na ${numBandeira}, percorrerá ${distancia} km e o total da corrida será de ${bandeira_1_corrida1}"`
+    }
+    if(horcorrida>=7){
+    if(horcorrida<=12){
+  res.innerHTML= `"Olá ${nomepassageiro} Sua corrida, será na ${numBandeira}, percorrerá ${distancia} km e o total da corrida será de ${bandeira_2_corrida2}"`
+    }
+    if(horcorrida>=13){
+    if(horcorrida<=23){
+  res.innerHTML= `"Olá ${nomepassageiro} Sua corrida, será na ${numBandeira}, percorrerá ${distancia} km e o total da corrida será de ${bandeira_3_corrida3}"`
+    }
+}
+
+   
+    
+    }
+    }
+    }
+    if(numBandeira==2){
+    if(horcorrida>=0){
+    if(horcorrida<=6){
+  res.innerHTML= `"Olá ${nomepassageiro} Sua corrida, será na ${numBandeira}, percorrerá ${distancia} km e o total da corrida será de ${bandeira_2_corrida1}"`
+    }
+    if(horcorrida>=7){
+    if(horcorrida<=12){
+  res.innerHTML= `"Olá ${nomepassageiro} Sua corrida, será na ${numBandeira}, percorrerá ${distancia} km e o total da corrida será de ${bandeira_2_corrida2}"`
+    }
+    if(horcorrida>=13){
+    if(horcorrida<=23){
+  res.innerHTML= `"Olá ${nomepassageiro} Sua corrida, será na ${numBandeira}, percorrerá ${distancia} km e o total da corrida será de ${bandeira_2_corrida3}"`
+    }
+}
+
+   
+    
+    }
+    }
+    } 
+    if(numBandeira==3){
+    if(horcorrida>=0){
+    if(horcorrida<=6){
+  res.innerHTML= `"Olá ${nomepassageiro} Sua corrida, será na ${numBandeira}, percorrerá ${distancia} km e o total da corrida será de ${bandeira_3_corrida1}"`
+    }
+    if(horcorrida>=7){
+    if(horcorrida<=12){
+  res.innerHTML= `"Olá ${nomepassageiro} Sua corrida, será na ${numBandeira}, percorrerá ${distancia} km e o total da corrida será de ${bandeira_3_corrida2}"`
+    }
+    if(horcorrida>=13){
+    if(horcorrida<=23){
+  res.innerHTML= `"Olá ${nomepassageiro} Sua corrida, será na ${numBandeira}, percorrerá ${distancia} km e o total da corrida será de ${bandeira_3_corrida3}"`
+    } 
+    }
+    }
+    }
+    }
+
+
+if(numBandeira<=0){
+res.innerHTML= `Desculpa, vc não inseriu 1,2 ou 3, digite novamente`
+}
+if(numBandeira>3){
+    res.innerHTML =  `Desculpa, vc não inseriu 1,2 ou 3, digite novamente```
+}
+
+if(numBandeira<=0){
+    res.innerHTML =  `Desculpa, vc não inseriu 1,2 ou 3, digite novamente```
+}
+
+if(numBandeira>23){
+    res.innerHTML =  `Desculpa, vc não inseriu 1,2 ou 3, digite novamente```
+}
+ 
+    }
+</script>
