@@ -1,2 +1,2 @@
 # ADS--Atividades-Entregues-Andamento
-SPTECH
+SPTECH, Atividades desenvolvidas durante as materia de algoritimo,banco de dados,arquitetura computacional,pesquisa inovação e sociemocional
